@@ -1,1 +1,15 @@
-# Taller de Automatizaci 
+# Taller de Automatizaci贸n: Pruebas e Integraci贸n Continua
+
+## Objetivos
+* Configurar un entorno de pruebas con Maven y JUnit 5.
+* Implementar pruebas unitarias at贸micas e independientes.
+* Automatizar el ciclo de vida del software con GitHub Actions.
+
+## Estructura
+* `pom.xml`: Gesti贸n de dependencias.
+* `src/test/java/CalculadoraTest.java`: Pruebas de suma y resta.
+* `.github/workflows/ci.yml`: Pipeline de automatizaci贸n.
+
+## Ejecuci贸n de Pruebas
+* **Local**: Ejecutar `mvn test` en la terminal.
+* **CI**: El reporte se genera autom谩ticamente en la pesta帽a **Actions** de GitHub.
