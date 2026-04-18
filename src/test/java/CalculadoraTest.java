@@ -1,19 +1,27 @@
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculadoraTest {
 
+    // Prueba atómica 1: Verifica exclusivamente la suma
     @Test
     public void testSuma() {
-        // Prueba atómica de suma
-        int resultado = 5 + 5;
-        assertEquals(10, resultado, "El resultado de 5 + 5 debe ser 10");
+        int a = 5;
+        int b = 10;
+        int resultado = a + b;
+        
+        // El tercer parámetro es el mensaje que verás si la prueba falla
+        assertEquals(15, resultado, "Error: La suma de 5 + 10 debería ser 15");
     }
 
+    // Prueba atómica 2: Verifica exclusivamente la resta
     @Test
     public void testResta() {
-        // Prueba atómica de resta
-        int resultado = 20 - 10;
-        assertEquals(10, resultado, "El resultado de 20 - 10 debe ser 10");
+        int a = 20;
+        int b = 8;
+        int resultado = a - b;
+        
+        assertEquals(12, resultado, "Error: La resta de 20 - 8 debería ser 12");
     }
 }
