@@ -1,0 +1,21 @@
+name: Pipeline de Pruebas Automatizadas
+
+# El pipeline se activa con cada "push" o "pull request"
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Usa un servidor Linux en la nube
+
+    steps:
+      - name: Descargar codigo del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Java JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Ejecutar pruebas con Maven
+        run: mvn clean test  # Este comando compila y corre tus tests de suma y resta
