@@ -19,3 +19,9 @@ jobs:
 
       - name: Ejecutar pruebas con Maven
         run: mvn clean test  # Este comando compila y corre tus tests de suma y resta
+
+    - name: Upload BDD Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: cucumber-report
+        path: target/cucumber-report.html
