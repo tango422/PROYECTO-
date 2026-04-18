@@ -13,3 +13,6 @@
 ## Comandos Usados
 * `mvn test`: Ejecuci√≥n local.
 * `git push origin main`: Disparar automatizaci√≥n.
+- pom.xml 
+- src/test/java/CalculadoraTest.java 
+Se configur¢ GitHub Actions para ejecutar mvn test autom†ticamente. 
