@@ -1,22 +1,22 @@
-# Taller de Automatizaci髇: Pruebas Unitarias e Integraci髇 Continua
+# Taller de Automatizaci贸n: Pruebas Unitarias e Integraci贸n Continua
 
 ## Objetivos
 * Configurar un entorno de pruebas con **Maven** y **JUnit 5**.
-* Implementar pruebas unitarias at髆icas e independientes.
+* Implementar pruebas unitarias at贸micas e independientes.
 * Automatizar el ciclo de vida del software mediante **GitHub Actions** (CI).
 
 ## Estructura del Proyecto
-* `pom.xml`: Configuraci髇 de dependencias (JUnit).
+* `pom.xml`: Configuraci贸n de dependencias (JUnit).
 * `src/test/java/CalculadoraTest.java`: Contiene las pruebas de Suma y Resta.
-* `.github/workflows/ci.yml`: Configuraci髇 del pipeline de automatizaci髇.
+* `.github/workflows/ci.yml`: Configuraci贸n del pipeline de automatizaci贸n.
 
 ## Comandos Principales Usados
-1. `mvn test`: Ejecuci髇 local de las pruebas.
-2. `git checkout -b [nombre_rama]`: Creaci髇 de ramas para nuevas funcionalidades.
-3. `git push origin [nombre_rama]`: Carga del c骴igo a la nube para activar el pipeline.
+1. `mvn test`: Ejecuci贸n local de las pruebas.
+2. `git checkout -b [nombre_rama]`: Creaci贸n de ramas para nuevas funcionalidades.
+3. `git push origin [nombre_rama]`: Carga del c贸digo a la nube para activar el pipeline.
 
-## Pipeline de Integraci髇 Continua (CI)
-El archivo `ci.yml` asegura que cada vez que se sube c骴igo a GitHub:
+## Pipeline de Integraci贸n Continua (CI)
+El archivo `ci.yml` asegura que cada vez que se sube c贸digo a GitHub:
 1. Se configure un entorno con **Java 21**.
-2. Se instalen las dependencias autom醫icamente.
-3. Se ejecuten las pruebas y se genere un reporte de resultados en la pesta馻 **Actions**.
+2. Se instalen las dependencias autom谩ticamente.
+3. Se ejecuten las pruebas y se genere un reporte de resultados en la pesta帽a **Actions**.
