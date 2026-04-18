@@ -1,4 +1,4 @@
-# Taller de Automatización: Pruebas e Integración Continua
+# Evaluacion2  Automatización: Pruebas e Integración Continua
 
 ## Objetivos
 * Configurar un entorno de pruebas con Maven y JUnit 5.
